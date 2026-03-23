@@ -1,44 +1,81 @@
-/* Ajoute ces animations au début de ton fichier style.css */
-.section {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s ease-out;
+/* Suppression des marges par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.section.visible {
-    opacity: 1;
-    transform: translateY(0);
+/* FOND NOIR ET TEXTE CLAIR OBLIGATOIRE */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d0d0d !important; /* Le !important force le noir */
+  color: #ffffff !important;
+  line-height: 1.6;
 }
 
-/* Amélioration des cartes de section */
-.section {
-    background: #1a1a1a;
-    border: 1px solid #333;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+/* HEADER STYLE */
+header {
+  background: #1a1a1a;
+  text-align: center;
+  padding: 50px 20px;
+  border-bottom: 3px solid #ff9500;
 }
 
-.section:hover {
-    transform: scale(1.02);
-    border-color: #ff9500;
+header h1 {
+  color: #ff9500;
+  font-size: 2.5rem;
 }
 
-/* Boutons de la navbar plus stylés */
+/* BARRE DE NAVIGATION */
+.navbar {
+  background-color: #1a1a1a;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #333;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
 .navbar a {
-    position: relative;
-    padding: 5px 0;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.navbar a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #ff9500;
-    transition: width 0.3s ease;
+.navbar a:hover {
+  color: #ff9500;
 }
 
-.navbar a:hover::after {
-    width: 100%;
+/* SECTIONS (LES CARTES) */
+.section {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  background: #141414 !important; /* Gris très foncé pour les blocs */
+  border-radius: 12px;
+  border: 1px solid #333;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.section h2 {
+  color: #ff9500;
+  margin-bottom: 15px;
+}
+
+/* IMAGES */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
 }
