@@ -1,0 +1,44 @@
+/* Ajoute ces animations au début de ton fichier style.css */
+.section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Amélioration des cartes de section */
+.section {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.section:hover {
+    transform: scale(1.02);
+    border-color: #ff9500;
+}
+
+/* Boutons de la navbar plus stylés */
+.navbar a {
+    position: relative;
+    padding: 5px 0;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff9500;
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
