@@ -161,74 +161,12 @@ footer {
     font-size: 0.9rem;
     border-top: 1px solid #f3f4f6;
 }
-.certif-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
-}
 
-.certif-card {
-    display: flex;
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease;
-}
-
-.certif-card:hover {
-    transform: translateY(-5px);
-}
-
-.certif-icon-box {
-    background: #c0c0c8; /* Le gris de ton image */
-    width: 140px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
-.certif-icon-box img {
-    width: 100%;
-    filter: grayscale(100%) brightness(0.8); /* Look sobre */
-}
-
-.certif-content {
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.certif-content h3 {
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-}
-
-.certif-content p {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 1rem;
-}
-
-.btn-certif {
-    display: inline-block;
-    background: #1e1b4b; /* Bleu très foncé comme ton image */
-    color: white !important;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 0.8rem;
-    width: fit-content;
-}
-
-/* Mobile */
-@media (max-width: 500px) {
-    .certif-card { flex-direction: column; }
-    .certif-icon-box { width: 100%; height: 100px; }
-}
 /* Responsive */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .grid-two-cols { grid-template-columns: 1fr; }
+    nav ul { display: none; } /* On pourrait ajouter un menu burger ici */
 @media (max-width: 768px) {
     .hero h1 { font-size: 2.5rem; }
     .grid-two-cols { grid-template-columns: 1fr; }
