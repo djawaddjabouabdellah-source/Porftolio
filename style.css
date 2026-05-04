@@ -164,3 +164,22 @@ nav ul li a:hover { color: var(--accent); }
     background-color: var(--accent); /* Devient bleu au survol */
     transform: scale(1.05);
 }
+/* Styles spécifiques pour les TP */
+.tp-icon {
+    background: #475569 !important; /* Une couleur gris-bleu pour différencier du gris des certifs */
+}
+
+.btn-tp {
+    background: #334155 !important; /* Un bouton légèrement plus clair que celui des certifs */
+}
+
+.tp-card:hover {
+    border-color: var(--accent);
+}
+
+/* On s'assure que les icônes (emojis ou images) sont centrées */
+.certif-icon-box span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
