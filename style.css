@@ -160,3 +160,7 @@ nav ul li a:hover { color: var(--accent); }
     .about-grid, .grid-two-cols, .footer-container { grid-template-columns: 1fr; }
     .cv-content { flex-direction: column; text-align: center; gap: 2rem; }
 }
+.btn-contact:hover {
+    background-color: var(--accent); /* Devient bleu au survol */
+    transform: scale(1.05);
+}
