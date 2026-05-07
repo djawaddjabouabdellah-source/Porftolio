@@ -48,3 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+/* Fond bleu dégradé pour BTS SIO et TP (comme "À propos de moi") */
+.bg-light-section {
+    background: linear-gradient(135deg, #f0f6ff 0%, #dbeafe 100%) !important;
+}
