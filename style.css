@@ -258,3 +258,117 @@ nav ul li a:hover { color: var(--accent); }
   .parcours-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .entry { grid-template-columns: 100px 1fr; gap: 1rem; }
 }
+
+/* ===== À PROPOS DE MOI ===== */
+.about-section {
+    padding: 5rem 10%;
+    background: linear-gradient(135deg, #f0f6ff 0%, #dbeafe 100%);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+    position: relative;
+}
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #2563eb;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+.about-section .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.about-left h3,
+.about-right h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: #0f172a;
+}
+.about-left p {
+    color: #475569;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+
+.cv-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #2563eb;
+    color: white;
+    padding: 0.9rem 1.6rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.cv-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.skill-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.15);
+}
+.skill-icon {
+    font-size: 2rem;
+    color: #2563eb;
+    margin-bottom: 0.6rem;
+}
+.skill-card h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 1rem;
+}
+.skill-card a {
+    font-size: 0.85rem;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+.skill-card a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .about-section .about-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 500px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
